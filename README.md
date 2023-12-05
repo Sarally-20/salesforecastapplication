@@ -66,4 +66,4 @@ For inquiries or support, please contact [dhanush.jd52003@gmail.com].
 
 ```
 
-Remember to replace placeholder values like `your-username`, `your-email@example.com`, and update any specific details related to your project structure, technologies, or additional features. Additionally, consider adding sections like "Technologies Used," "Demo," or "Acknowledgments" based on the specifics of your project.
+Remember to replace placeholder values like ``, `DHANUSH J dhanush.jd52003@gmail.com`, and update any specific details related to your project structure, technologies, or additional features. Additionally, consider adding sections like "Technologies Used," "Demo," or "Acknowledgments" based on the specifics of your project.
