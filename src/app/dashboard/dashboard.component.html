@@ -1,0 +1,31 @@
+<div class="conatiner">
+  
+
+<h1 class="text-center ">Sales forecast</h1>
+<button class="btn btn-danger" routerLink="/login" >Logout</button>
+       
+<main role="main" class="container mt-5">
+  <div class="container">
+    <form action="">
+      <div class="mb-3">
+        <h4>Upload the file</h4>
+        <input class="form-control" type="file" id="formFile" name="file" (change)="updatefile()">
+      </div>
+      <h4>Periodicity</h4>
+      <div class="input-group mb-3">
+        <!-- <label class="input-group-text" for="inputGroupSelect01">Options</label> -->
+        <select class="form-control" id="inputGroupSelect01" name="per" [(ngModel)]="period">
+          <option disabled hidden selected>Choose...</option>
+          <option value="Year">Year</option>
+          <option value="Month">Month</option>
+          <option value="Week">Week</option>
+
+        </select>
+      </div>
+      <div class="mb-3">
+        <input class="form-control" type="number" id="formFile" name="file" [(ngModel)]="n">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="send()">Predict</button>  
+    </form>
+  </div>
+</main></div>

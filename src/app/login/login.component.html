@@ -1,0 +1,36 @@
+<div class="outer">
+    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/04c7b348b02d2c82bf60" alt="">
+    <h1 >Sales forecast  </h1>
+  <div class="container">
+    <div class="row">
+        <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+            <div class="panel border bg-white">
+                <div class="panel-heading">
+                    <h3 class="pt-4  5font-weigth-bold">Login  <div class="under"></div></h3>
+                </div>
+                <div class="panel-body p-3 pt-0">
+                    <form  >
+                        <div class="form-group pt-3 w-100">
+                            <div class="input-field">
+                                <span class="fa fa-user p-2"></span>
+                                <input type="text" placeholder="Username" required  name="email" id="email" [(ngModel)]="email" >
+                              
+                            </div>
+                        </div>
+                        <div class="form-group pt-3 w-100">
+                            <div class="input-field ">
+                                <span class="fa fa-lock p-2"></span>
+                                <input [type]="type" placeholder="Password" required  id="password" name="pass" [(ngModel)]="password" >
+                                <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                            </div>
+                        </div>
+                        <button type="submit" id="btn"  class="btn btn-primary btn-block mt-4    w-50" (click)="check()" >Login</button>
+            
+                        <div class="text-center pt-0 text-muted">Don't have account? <a id="forget" routerLink="/signup"> Sign Up</a></div>
+                    </form>
+                </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>

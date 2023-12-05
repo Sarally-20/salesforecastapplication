@@ -1,0 +1,40 @@
+<div class="outer">
+    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/04c7b348b02d2c82bf60" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                <div class="panel border bg-white">
+                    <div class="panel-heading">
+                        <h3 class="pt-3 font-weigth-bold">Sign Up<div class="under"></div></h3>
+                    </div>
+                    <div class="panel-body p-3">
+                        <form>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Name"  name="name"  id="" [(ngModel)]="formdata.name" #name="ngModel" required >
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-user p-2"></span>
+                                    <input type="text" placeholder="Email"  name="email" id="" [(ngModel)]="formdata.email" #email="ngModel" required >
+                                </div>
+                            </div>
+                            <div class="form-group pt-3">
+                                <div class="input-field">
+                                    <span class="fa fa-lock p-2"></span>
+                                    <input [type]="type" placeholder="password" name="password" id="" [(ngModel)]="formdata.password" #password="ngModel" required >
+                                    <span (click)="hideShowPass()" class="fa {{eyeIcon}}"></span>
+                                </div>
+                            </div>
+                           
+                            <button type="submit"  id="btn" class="btn btn-primary btn-block mt-4 w-50"routerLink="/login">Sign Up</button>
+                            <div class="text-center pt-4 text-muted">Already have account? <a id="forget" routerLink="/login"> Login</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
